@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: elpastor <elpastor@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/01/04 16:08:48 by elpastor          #+#    #+#             */
+/*   Updated: 2022/01/04 16:08:51 by elpastor         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 int	ft_conv(const char c, va_list arg)
@@ -26,7 +38,7 @@ int	ft_conv(const char c, va_list arg)
 	return (count);
 }
 
-int ft_printf(const char *s, ...)
+int	ft_printf(const char *s, ...)
 {
 	size_t	i;
 	size_t	count;

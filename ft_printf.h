@@ -1,10 +1,21 @@
-#ifndef PRINTF_H
-# define PRINTF_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: elpastor <elpastor@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/01/04 16:08:58 by elpastor          #+#    #+#             */
+/*   Updated: 2022/01/04 16:10:00 by elpastor         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <string.h>
-#include <unistd.h>
-#include <stdarg.h>
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
+# include <string.h>
+# include <unistd.h>
+# include <stdarg.h>
 
 int	ft_printf(const char *s, ...);
 int	ft_conv(const char c, va_list arg);
